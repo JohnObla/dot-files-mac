@@ -1,0 +1,24 @@
+# brewfile.lock.json is best for local debugging
+# https://www.worldlink.com.cn/en/osdir/homebrew-bundle.html
+Brewfile.lock.json
+
+# neovim undo history
+config/nvim/undo
+
+# neovim netrw history
+# https://vi.stackexchange.com/a/10672
+config/nvim/.netrwhist
+
+# neovim plugins
+config/nvim/plugged
+
+# config store
+config/configstore
+
+# coc folder
+config/coc/extensions
+config/coc/list*
+config/coc/snippets-mru
+
+# novahub env variables
+set_novahub_env_variables.fish

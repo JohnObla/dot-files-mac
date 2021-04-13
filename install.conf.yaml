@@ -1,0 +1,18 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ["~"]
+
+- link:
+    ~/.config:
+    ~/.gitconfig:
+
+- create:
+    - ~/repos
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+    - command: "./.custom-scripts/install-packages.fish"
+      stdout: true
+      stderr: true
