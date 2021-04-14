@@ -15,6 +15,9 @@ config/nvim/plugged
 # config store
 config/configstore
 
+# iterm2
+config/iterm2
+
 # coc folder
 config/coc/extensions
 config/coc/list*
