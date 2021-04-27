@@ -12,3 +12,6 @@ set -g theme_short_path no
 
 # add novahub env variables
 set_novahub_env_variables
+
+# add macports to path
+set PATH /opt/local/bin $PATH
