@@ -25,3 +25,6 @@ config/coc/snippets-mru
 
 # novahub env variables
 set_novahub_env_variables.fish
+
+# node modules
+node_modules
