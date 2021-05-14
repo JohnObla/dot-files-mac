@@ -1,5 +1,5 @@
 # set default editor to neovim 
-set -gx EDITOR vim
+set -gx EDITOR nvim
 
 # Added by n-install (see http://git.io/n-install-repo).
 # Original below
