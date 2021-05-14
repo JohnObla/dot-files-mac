@@ -15,3 +15,6 @@ set_novahub_env_variables
 
 # add macports to path
 set PATH /opt/local/bin $PATH
+
+# add nvim to path
+set PATH $HOME/nvim-osx64/bin $PATH
