@@ -1,7 +1,7 @@
 " general settings
 
 " can paste from clipboard
-set clipboard+=unamedplus
+set clipboard+=unnamedplus
 
 " allows file to be modified by multiple neovim processes
 set noswapfile
