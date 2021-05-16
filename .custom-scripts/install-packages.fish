@@ -26,6 +26,7 @@ nvim --headless +PlugInstall +qall
 
 # install lsp servers
 npm install -g typescript typescript-language-server
+npm install -g bash-language-server
 npm install -g vscode-css-languageserver-bin
 npm install -g dockerfile-language-server-nodejs
 npm install -g graphql-language-service-cli

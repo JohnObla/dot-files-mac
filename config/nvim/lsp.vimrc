@@ -4,7 +4,7 @@ lua << EOF
 -- npm install -g typescript typescript-language-server
 require'lspconfig'.tsserver.setup{}
 
--- no requirements
+-- npm i -g bash-language-server
 require'lspconfig'.bashls.setup{}
 
 -- link for snippet support: https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#cssls
