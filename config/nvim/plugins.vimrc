@@ -11,4 +11,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'neovim/nvim-lspconfig'
 " syntax highlighting
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+" vscode color schemes
+Plug 'christianchiarulli/nvcode-color-schemes.vim'
 call plug#end()
