@@ -7,6 +7,8 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 " automatically closes brackets
 Plug 'jiangmiao/auto-pairs'
-" lsp config
+" compilation checker
 Plug 'neovim/nvim-lspconfig'
+" syntax highlighting
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 call plug#end()

@@ -9,3 +9,6 @@ source $HOME/.config/nvim/plugins.vimrc
 
 " lsp config
 source $HOME/.config/nvim/lsp.vimrc
+
+" treesitter config
+source $HOME/.config/nvim/treesitter.vimrc
