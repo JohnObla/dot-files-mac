@@ -22,3 +22,11 @@ require'lspconfig'.html.setup{}
 
 " npm install -g vscode-json-languageserver
 require'lspconfig'.jsonls.setup{}
+
+" npm install -g vim-language-server
+require'lspconfig'.vimls.setup{}
+
+" npm install -g yaml-language-server
+require'lspconfig'.yamlls.setup{}
+
+" todo - add lua: https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#sumneko_lua
