@@ -18,5 +18,5 @@ let mapleader = "\<space>"
 nnoremap <leader>rv :source $MYVIMRC<CR>
 
 " file save and file quit 
-nnoremap <leader>fw :w<CR>
-nnoremap <leader>fq :q<CR>
+nnoremap <leader><leader>w :w<CR>
+nnoremap <leader><leader>q :q<CR>
