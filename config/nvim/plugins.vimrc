@@ -19,4 +19,9 @@ Plug 'kyazdani42/nvim-tree.lua'
 " git diffs in file
 Plug 'nvim-lua/plenary.nvim' " dependancy
 Plug 'lewis6991/gitsigns.nvim'
+" highlighted yank
+Plug 'machakann/vim-highlightedyank'
 call plug#end()
+
+" highlighted yank settings
+let g:highlightedyank_highlight_duration = 250
