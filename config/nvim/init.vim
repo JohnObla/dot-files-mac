@@ -1,8 +1,11 @@
 " general settings
 source $HOME/.config/nvim/general.vimrc
 
-" custom key bindings
-source $HOME/.config/nvim/keys.vimrc
+lua << EOF
+-- key bindings
+require('keys')
+
+EOF
 
 " plugin manager
 source $HOME/.config/nvim/plugins.vimrc
@@ -18,3 +21,4 @@ source $HOME/.config/nvim/nvimtree.vimrc
 
 " gitsigns config
 source $HOME/.config/nvim/gitsigns.vimrc
+
