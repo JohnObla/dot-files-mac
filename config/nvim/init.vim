@@ -15,3 +15,6 @@ source $HOME/.config/nvim/treesitter.vimrc
 
 " nvimtree config
 source $HOME/.config/nvim/nvimtree.vimrc
+
+" gitsigns config
+source $HOME/.config/nvim/gitsigns.vimrc

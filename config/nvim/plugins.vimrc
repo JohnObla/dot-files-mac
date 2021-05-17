@@ -16,4 +16,7 @@ Plug 'christianchiarulli/nvcode-color-schemes.vim'
 " nvim tree
 Plug 'kyazdani42/nvim-web-devicons' " for file icons
 Plug 'kyazdani42/nvim-tree.lua'
+" git diffs in file
+Plug 'nvim-lua/plenary.nvim' " dependancy
+Plug 'lewis6991/gitsigns.nvim'
 call plug#end()
