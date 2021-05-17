@@ -21,7 +21,13 @@ Plug 'nvim-lua/plenary.nvim' " dependancy
 Plug 'lewis6991/gitsigns.nvim'
 " highlighted yank
 Plug 'machakann/vim-highlightedyank'
+" telescope fuzzy finder
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug  'nvim-telescope/telescope-fzy-native.nvim' " speeds up finder - https://www.youtube.com/watch?v=2tO2sT7xX2k
 call plug#end()
 
 " highlighted yank settings
 let g:highlightedyank_highlight_duration = 250
+
