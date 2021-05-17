@@ -1,77 +1,6 @@
 " lsp config
 
 lua << EOF
--- npm install -g typescript typescript-language-server
-require'lspconfig'.tsserver.setup{}
-
--- npm i -g bash-language-server
-require'lspconfig'.bashls.setup{}
-
--- link for snippet support: https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#cssls
--- npm install -g vscode-css-languageserver-bin
-require'lspconfig'.cssls.setup{}
-
--- npm install -g dockerfile-language-server-nodejs
-require'lspconfig'.dockerls.setup{}
-
--- npm install -g graphql-language-service-cli
-require'lspconfig'.graphql.setup{}
-
--- link for snippet support: https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#html
--- npm install -g vscode-html-languageserver-bin
-require'lspconfig'.html.setup{}
-
--- npm install -g vscode-json-languageserver
-require'lspconfig'.jsonls.setup{}
-
--- npm install -g vim-language-server
-require'lspconfig'.vimls.setup{}
-
--- npm install -g yaml-language-server
-require'lspconfig'.yamlls.setup{}
-
--- lua: https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#sumneko_lua
-local system_name
-if vim.fn.has("mac") == 1 then
-  system_name = "macOS"
-elseif vim.fn.has("unix") == 1 then
-  system_name = "Linux"
-elseif vim.fn.has('win32') == 1 then
-  system_name = "Windows"
-else
-  print("Unsupported system for sumneko")
-end
-
-require'lspconfig'.sumneko_lua.setup {
-  cmd = {"/Users/john/lua-language-server/bin/macOS/lua-language-server"};
-  settings = {
-    Lua = {
-      runtime = {
-        -- Tell the language server which version of Lua you're using (most likely LuaJIT in the case of Neovim)
-        version = 'LuaJIT',
-        -- Setup your lua path
-        path = vim.split(package.path, ';'),
-      },
-      diagnostics = {
-        -- Get the language server to recognize the `vim` global
-        globals = {'vim'},
-      },
-      workspace = {
-        -- Make the server aware of Neovim runtime files
-        library = {
-          [vim.fn.expand('$VIMRUNTIME/lua')] = true,
-          [vim.fn.expand('$VIMRUNTIME/lua/vim/lsp')] = true,
-        },
-      },
-      -- Do not send telemetry data containing a randomized but unique identifier
-      telemetry = {
-        enable = false,
-      },
-    },
-  },
-}
-
-
 -- key bindings
 local nvim_lsp = require('lspconfig')
 local on_attach = function(client, bufnr)
@@ -122,10 +51,20 @@ local on_attach = function(client, bufnr)
   end
 end
 
--- Use a loop to conveniently both setup defined servers 
--- and map buffer local keybindings when the language server attaches
-local servers = { "pyright", "rust_analyzer", "tsserver" }
-for _, lsp in ipairs(servers) do
-  nvim_lsp[lsp].setup { on_attach = on_attach }
+-- lspinstall config
+local function setup_servers()
+  require'lspinstall'.setup()
+  local servers = require'lspinstall'.installed_servers()
+  for _, server in pairs(servers) do
+    require'lspconfig'[server].setup{}
+  end
+end
+
+setup_servers()
+
+-- Automatically reload after `:LspInstall <server>` so we don't have to restart neovim
+require'lspinstall'.post_install_hook = function ()
+  setup_servers() -- reload installed servers
+  vim.cmd("bufdo e") -- this triggers the FileType autocmd that starts the server
 end
 EOF
