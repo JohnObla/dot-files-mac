@@ -23,15 +23,14 @@ set relativenumber
 " set absolute line number as well
 set nu
 
-" commenting below while I work on indentation
-" use 4 spaces instead of tab()
+" use 2 spaces instead of tab()
 " copy indent from current line when starting a new line
-" set autoindent
-" set smartindent
-" set expandtab
-" set tabstop=2
-" set softtabstop=2
-" set shiftwidth=2
+set autoindent
+set smartindent
+set expandtab
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 
 " allow smartcase
 set ignorecase
