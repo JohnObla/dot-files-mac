@@ -34,3 +34,6 @@ npm install -g vscode-html-languageserver-bin
 npm install -g vscode-json-languageserver
 npm install -g vim-language-server
 npm install -g yaml-language-server
+
+# install better looking git diffs
+npm install -g diff-so-fancy
