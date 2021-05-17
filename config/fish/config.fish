@@ -5,7 +5,7 @@ set -gx EDITOR nvim
 # Original below
 # export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  
 set N_PREFIX "$HOME/n"
-set PATH $N_PREFIX/bin $PATH
+fish_add_path $N_PREFIX/bin
 
 # set long path for prompt
 set -g theme_short_path no
@@ -14,7 +14,11 @@ set -g theme_short_path no
 set_novahub_env_variables
 
 # add macports to path
-set PATH /opt/local/bin $PATH
+fish_add_path /opt/local/bin
 
 # add nvim to path
-set PATH $HOME/nvim-osx64/bin $PATH
+fish_add_path $HOME/nvim-osx64/bin
+
+# add local bin to path
+fish_add_path $HOME/bin
+
