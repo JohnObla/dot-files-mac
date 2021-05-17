@@ -16,3 +16,7 @@ let mapleader = "\<space>"
 
 " reload vimrc
 nnoremap <leader>rv :source $MYVIMRC<CR>
+
+" file save and file quit 
+nnoremap <leader>fw :w<CR>
+nnoremap <leader>fq :q<CR>
