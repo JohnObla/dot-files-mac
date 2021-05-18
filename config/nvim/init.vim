@@ -7,9 +7,6 @@ require('general')
 require('plugins')
 EOF
 
-" lsp config
-source $HOME/.config/nvim/lsp.vimrc
-
 " treesitter config
 source $HOME/.config/nvim/treesitter.vimrc
 
