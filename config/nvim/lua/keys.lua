@@ -24,6 +24,6 @@ map('n','<C-l>','<C-w>l')
 map('n','<C-w>h','<C-w>s')
 
 -- buffer next shortcut
-map('n','<leader>bn ',':bn<CR>')
-map('n','<leader>bp ',':bp<CR> ')
+map('n','<leader>bn',':bn<CR>')
+map('n','<leader>bp',':bp<CR>')
 
