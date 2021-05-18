@@ -9,3 +9,4 @@ require('plugins')
 vim.cmd 'source $HOME/.config/nvim/treesitter.vimrc'
 -- nvimtree config
 vim.cmd 'source $HOME/.config/nvim/nvimtree.vimrc'
+
