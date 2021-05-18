@@ -10,8 +10,6 @@ return require('packer').startup(function()
   use 'tpope/vim-surround'
   -- automatically closes brackets
   use 'jiangmiao/auto-pairs'
-  -- compilation checker
-  use 'neovim/nvim-lspconfig'
   -- syntax highlighting
   use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'} -- We recommend updating the parsers on update
   -- vscode color schemes
@@ -32,12 +30,19 @@ return require('packer').startup(function()
       require('gitsigns').setup()
     end
   }
+  -- compilation checker
+  use {
+    'neovim/nvim-lspconfig',
+    config = function()
+      require('config.lsp').setup()
+    end
+  }
   -- lsp install
   use {
     'kabouzeid/nvim-lspinstall',
     requires = 'neovim/nvim-lspconfig',
     config = function()
-      require('config.lsp').setup()
+      require('config.lsp_install').setup()
     end
   }
   -- code completion
