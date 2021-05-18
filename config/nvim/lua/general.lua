@@ -35,3 +35,5 @@ opt('w', 'number', true)                              -- Print line number
 opt('w', 'relativenumber', true)                      -- Relative line numbers
 opt('w', 'wrap', false)                               -- Disable line wrap
 
+-- highlight on yank
+ vim.api.nvim_command('au TextYankPost * silent! lua vim.highlight.on_yank()')
