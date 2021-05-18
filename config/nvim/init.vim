@@ -1,9 +1,8 @@
-" general settings
-source $HOME/.config/nvim/general.vimrc
-
 lua << EOF
 -- key bindings
 require('keys')
+-- general settings
+require('general')
 
 EOF
 
