@@ -3,11 +3,9 @@ lua << EOF
 require('keys')
 -- general settings
 require('general')
-
+-- plugin manager
+require('plugins')
 EOF
-
-" plugin manager
-source $HOME/.config/nvim/plugins.vimrc
 
 " lsp config
 source $HOME/.config/nvim/lsp.vimrc

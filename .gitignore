@@ -10,7 +10,7 @@ config/nvim/undo
 config/nvim/.netrwhist
 
 # neovim plugins
-config/nvim/plugged
+config/nvim/plugin
 
 # config store
 config/configstore
@@ -28,3 +28,4 @@ set_novahub_env_variables.fish
 
 # node modules
 node_modules
+
