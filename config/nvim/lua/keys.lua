@@ -32,3 +32,6 @@ map('n','<C-w>h','<C-w>s')
 map('n','<leader>bn',':bn<CR>')
 map('n','<leader>bp',':bp<CR>')
 
+-- terminal opens and closes easier
+map('n','<leader>te',':terminal<CR>')
+map('t','<Esc>','<C-\\><C-n>')
