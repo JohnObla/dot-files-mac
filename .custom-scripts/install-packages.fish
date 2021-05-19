@@ -27,3 +27,6 @@ nvim --headless +PlugInstall +qall
 # install better looking git diffs
 npm install -g diff-so-fancy
 
+# install go for efm server
+sudo port install go
+
