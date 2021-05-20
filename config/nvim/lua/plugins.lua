@@ -52,5 +52,9 @@ return require('packer').startup(function()
       require('config.compe').setup()
     end
   }
+  use {
+    'prettier/vim-prettier',
+    run = 'yarn install'
+  }
 end)
 
