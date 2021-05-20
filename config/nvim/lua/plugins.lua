@@ -73,5 +73,7 @@ return require('packer').startup(function()
   }
   -- window resizer
   use 'simeji/winresizer'
+  -- commenter
+  use 'tpope/vim-commentary'
 end)
 
