@@ -52,12 +52,24 @@ return require('packer').startup(function()
       require('config.compe').setup()
     end
   }
+  -- prettier formatter
   use {
     'prettier/vim-prettier',
     run = 'yarn install',
     config = function ()
-	    require('config.prettier').setup()
+      require('config.prettier').setup()
     end
   }
+  -- telescope fuzzy finder
+  use {
+  'nvim-telescope/telescope.nvim',
+  requires = {
+      {'nvim-lua/popup.nvim'},
+      {'nvim-lua/plenary.nvim'}
+  },
+  config = function ()
+    require('config.telescope').setup()
+  end
+}
 end)
 
