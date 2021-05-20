@@ -79,5 +79,15 @@ return require('packer').startup(function()
   use 'AndrewRadev/splitjoin.vim'
   -- close file without closing window
   use 'moll/vim-bbye'
+  use {
+    'glepnir/galaxyline.nvim',
+    branch = 'main',
+    -- some optional icons
+    requires = {'kyazdani42/nvim-web-devicons', opt = true},
+    -- your statusline
+    config = function()
+      require('config.galaxyline')
+    end
+  }
 end)
 
