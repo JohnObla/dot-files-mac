@@ -76,13 +76,41 @@ gls.left[3] = {
     GitBranch = {
         provider = 'GitBranch',
         condition = condition.check_git_workspace,
-        separator = ' ',
+        separator = '  ',
         separator_highlight = {'NONE', colors.bg},
-        highlight = {colors.grey, colors.bg}
+        highlight = {colors.orange, colors.bg}
     }
 }
 
 gls.left[4] = {
+    FileIcon = {
+        provider = 'FileIcon',
+        separator_highlight = {'NONE', colors.bg},
+        highlight = {colors.light_blue, colors.bg}
+  }
+}
+
+gls.left[5] = {
+  FileName = {
+    provider = 'FileName',
+    separator = ' ',
+    separator_highlight = {'NONE', colors.bg},
+    highlight = {colors.light_blue, colors.bg},
+  }
+}
+
+gls.left[6] = {
+    DiagnosticError = {provider = 'DiagnosticError', icon = '  ', highlight = {colors.error_red, colors.bg}}
+}
+gls.left[7] = {DiagnosticWarn = {provider = 'DiagnosticWarn', icon = '  ', highlight = {colors.orange, colors.bg}}}
+
+gls.left[8] = {
+    DiagnosticHint = {provider = 'DiagnosticHint', icon = '  ', highlight = {colors.vivid_blue, colors.bg}}
+}
+
+gls.left[9] = {DiagnosticInfo = {provider = 'DiagnosticInfo', icon = '  ', highlight = {colors.info_yellow, colors.bg}}}
+
+gls.mid[1] = {
     DiffAdd = {
         provider = 'DiffAdd',
         condition = condition.hide_in_width,
@@ -90,7 +118,7 @@ gls.left[4] = {
         highlight = {colors.green, colors.bg}
     }
 }
-gls.left[5] = {
+gls.mid[2] = {
     DiffModified = {
         provider = 'DiffModified',
         condition = condition.hide_in_width,
@@ -98,7 +126,7 @@ gls.left[5] = {
         highlight = {colors.blue, colors.bg}
     }
 }
-gls.left[6] = {
+gls.mid[3] = {
     DiffRemove = {
         provider = 'DiffRemove',
         condition = condition.hide_in_width,
@@ -108,17 +136,6 @@ gls.left[6] = {
 }
 
 gls.right[1] = {
-    DiagnosticError = {provider = 'DiagnosticError', icon = '  ', highlight = {colors.error_red, colors.bg}}
-}
-gls.right[2] = {DiagnosticWarn = {provider = 'DiagnosticWarn', icon = '  ', highlight = {colors.orange, colors.bg}}}
-
-gls.right[3] = {
-    DiagnosticHint = {provider = 'DiagnosticHint', icon = '  ', highlight = {colors.vivid_blue, colors.bg}}
-}
-
-gls.right[4] = {DiagnosticInfo = {provider = 'DiagnosticInfo', icon = '  ', highlight = {colors.info_yellow, colors.bg}}}
-
-gls.right[5] = {
     ShowLspClient = {
         provider = 'GetLspClient',
         condition = function()
@@ -131,7 +148,7 @@ gls.right[5] = {
     }
 }
 
-gls.right[6] = {
+gls.right[2] = {
     LineInfo = {
         provider = 'LineColumn',
         separator = '  ',
@@ -140,7 +157,7 @@ gls.right[6] = {
     }
 }
 
-gls.right[7] = {
+gls.right[3] = {
     PerCent = {
         provider = 'LinePercent',
         separator = ' ',
@@ -149,7 +166,7 @@ gls.right[7] = {
     }
 }
 
-gls.right[8] = {
+gls.right[4] = {
     Tabstop = {
         provider = function()
             return "Spaces: " .. vim.api.nvim_buf_get_option(0, "shiftwidth") .. " "
@@ -161,7 +178,7 @@ gls.right[8] = {
     }
 }
 
-gls.right[9] = {
+gls.right[5] = {
     BufferType = {
         provider = 'FileTypeName',
         condition = condition.hide_in_width,
@@ -171,7 +188,7 @@ gls.right[9] = {
     }
 }
 
-gls.right[10] = {
+gls.right[6] = {
     FileEncode = {
         provider = 'FileEncode',
         condition = condition.hide_in_width,
@@ -181,7 +198,7 @@ gls.right[10] = {
     }
 }
 
-gls.right[11] = {
+gls.right[7] = {
     Space = {
         provider = function()
             return ' '
