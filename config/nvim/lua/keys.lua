@@ -15,11 +15,8 @@ map('n','<space>','<nop>') -- ignore usual space action
 map('n','<leader>rv',':source $MYVIMRC<CR>')
 
 -- file save and file quit
-map('n','<leader>ww',':w<CR>')
-map('n','<leader>wa',':wa<CR>')
-map('n','<leader>qq',':q<CR>')
-map('n','<leader>qa',':qa<CR>')
-map('n','<leader>q!',':q!<CR>')
+map('n','<leader>w',':w<CR>')
+map('n','<leader>q',':q<CR>')
 
 -- makes window navigation easier
 map('n','<C-h>','<C-w>h')
