@@ -16,7 +16,7 @@ map('n','<leader>rv',':source $MYVIMRC<CR>')
 
 -- file save and file quit
 map('n','<leader>w',':w<CR>')
-map('n','<leader>q',':q<CR>')
+map('n','<leader>q',':Bdelete<CR>') -- use vim bye bye to preserve window
 
 -- makes window navigation easier
 map('n','<C-h>','<C-w>h')

@@ -75,5 +75,9 @@ return require('packer').startup(function()
   use 'simeji/winresizer'
   -- commenter
   use 'tpope/vim-commentary'
+  -- split and join multiline code
+  use 'AndrewRadev/splitjoin.vim'
+  -- close file without closing window
+  use 'moll/vim-bbye'
 end)
 
