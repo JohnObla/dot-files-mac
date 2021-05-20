@@ -15,7 +15,18 @@ return require('packer').startup(function()
   -- vscode color schemes
   use {
     'christianchiarulli/nvcode-color-schemes.vim',
-    requires = 'nvim-treesitter/nvim-treesitter'
+    requires = 'nvim-treesitter/nvim-treesitter',
+    config = function()
+      require'nvim-treesitter.configs'.setup {
+        ensure_installed = "maintained", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
+        highlight = {
+          enable = true,              -- false will disable the whole extension
+        },
+        indent = {
+          enable = true
+        },
+      }
+    end
   }
   -- nvim tree
   use {
