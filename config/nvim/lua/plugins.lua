@@ -71,5 +71,7 @@ return require('packer').startup(function()
       require('config.telescope').setup()
     end
   }
+  -- window resizer
+  use 'simeji/winresizer'
 end)
 
