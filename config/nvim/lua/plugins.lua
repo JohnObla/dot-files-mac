@@ -62,14 +62,14 @@ return require('packer').startup(function()
   }
   -- telescope fuzzy finder
   use {
-  'nvim-telescope/telescope.nvim',
-  requires = {
+    'nvim-telescope/telescope.nvim',
+    requires = {
       {'nvim-lua/popup.nvim'},
       {'nvim-lua/plenary.nvim'}
-  },
-  config = function ()
-    require('config.telescope').setup()
-  end
-}
+    },
+    config = function ()
+      require('config.telescope').setup()
+    end
+  }
 end)
 
