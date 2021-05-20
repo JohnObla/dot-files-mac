@@ -30,3 +30,5 @@ npm install -g diff-so-fancy
 # install go for efm server
 sudo port install go
 
+# install ripgrep fuzzy finder
+sudo port install ripgrep
