@@ -54,7 +54,10 @@ return require('packer').startup(function()
   }
   use {
     'prettier/vim-prettier',
-    run = 'yarn install'
+    run = 'yarn install',
+    config = function ()
+	    require('config.prettier').setup()
+    end
   }
 end)
 
