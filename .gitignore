@@ -29,3 +29,5 @@ set_novahub_env_variables.fish
 # node modules
 node_modules
 
+# workspace sessions
+config/nvim/sessions
