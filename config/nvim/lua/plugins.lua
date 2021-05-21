@@ -63,6 +63,11 @@ return require('packer').startup(function()
       require('config.compe').setup()
     end
   }
+  -- snippets
+  use {
+    'hrsh7th/vim-vsnip',
+    'hrsh7th/vim-vsnip-integ'
+  }
   -- prettier formatter
   use {
     'prettier/vim-prettier',
