@@ -105,5 +105,7 @@ return require('packer').startup(function()
       require('config.galaxyline')
     end
   }
+  -- easier navigation
+  use 'easymotion/vim-easymotion'
 end)
 
