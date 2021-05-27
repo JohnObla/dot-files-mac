@@ -32,3 +32,6 @@ sudo port install go
 
 # install ripgrep fuzzy finder
 sudo port install ripgrep
+
+# install json editor cli
+npm install -g json
