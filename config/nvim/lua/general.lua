@@ -38,3 +38,5 @@ opt('w', 'wrap', false)                               -- Disable line wrap
 -- highlight on yank
 vim.cmd 'au TextYankPost * silent! lua vim.highlight.on_yank()'
 
+-- refresh buffer on focus
+vim.cmd 'au WinEnter,TabEnter,FocusGained * checktime'
