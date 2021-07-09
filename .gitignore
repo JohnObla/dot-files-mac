@@ -31,3 +31,7 @@ node_modules
 
 # workspace sessions
 config/nvim/sessions
+
+# github cli sensitive files
+config/gh/hosts.yml
+config/gh/state.yml
