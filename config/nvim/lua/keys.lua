@@ -36,3 +36,7 @@ map('n','<leader>bp',':bp<CR>')
 -- terminal opens and closes easier
 map('n','<leader>te',':terminal<CR>')
 map('t','<Esc>','<C-\\><C-n>')
+
+-- auto close jsx/html tags
+-- https://www.reddit.com/r/vim/comments/gu5nm0/automatically_close_jsx_tags/fsgppz3?utm_source=share&utm_medium=web2x&context=3
+map('i','<C-s>','<esc>yiwi<lt><esc>ea></><esc>hpF>i')
