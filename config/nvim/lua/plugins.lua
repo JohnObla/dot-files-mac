@@ -107,5 +107,9 @@ return require('packer').startup(function()
   }
   -- easier navigation
   use 'easymotion/vim-easymotion'
+  -- contextual comments
+  use 'suy/vim-context-commentstring'
+  -- reload neovim config
+  use 'famiu/nvim-reload'
 end)
 
