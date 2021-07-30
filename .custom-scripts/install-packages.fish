@@ -35,3 +35,6 @@ sudo port install ripgrep
 
 # install json editor cli
 npm install -g json
+
+# install openjdk
+sudo port install openjdk8
