@@ -22,3 +22,5 @@ fish_add_path $HOME/nvim-osx64/bin
 # add local bin to path
 fish_add_path $HOME/bin
 
+# add android env variables
+set_android_env_variables
