@@ -38,7 +38,6 @@ function module.setup()
   local servers = {
     "pyright",
     "rust_analyzer",
-    "tsserver",
     "vim",
     "yaml",
     "bash",
