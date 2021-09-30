@@ -33,31 +33,18 @@ function module.setup()
     buf_set_keymap('n', '<space>dl', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
   end
 
-  -- Use a loop to conveniently call 'setup' on multiple servers and
-  -- map buffer local keybindings when the language server attaches
-  local servers = {
-    "tsserver",
-    "pyright",
-    "rust_analyzer",
-    "vim",
-    "yaml",
-    "bash",
-    "html",
-    "lua",
-    "json",
-    "css",
-    "dockerfile",
-    "graphql",
-    "typescript",
-    }
-  for _, lsp in ipairs(servers) do
-    nvim_lsp[lsp].setup {
-      on_attach = on_attach,
-      flags = {
-      debounce_text_changes = 150,
-      }
-    }
-  end
+  -- manually setup servers
+  nvim_lsp.pyright.setup{on_attach = on_attach, flags= {debounce_text_changes = 150,}}
+  nvim_lsp.rust_analyzer.setup{on_attach = on_attach, flags= {debounce_text_changes = 150,}}
+  nvim_lsp.tsserver.setup{on_attach = on_attach, flags= {debounce_text_changes = 150,}}
+  nvim_lsp.vim.setup{on_attach = on_attach, flags= {debounce_text_changes = 150,}}
+  nvim_lsp.yaml.setup{on_attach = on_attach, flags= {debounce_text_changes = 150,}}
+  nvim_lsp.html.setup{on_attach = on_attach, flags= {debounce_text_changes = 150,}}
+  nvim_lsp.lua.setup{on_attach = on_attach, flags= {debounce_text_changes = 150,}}
+  nvim_lsp.json.setup{on_attach = on_attach, flags= {debounce_text_changes = 150,}}
+  nvim_lsp.css.setup{on_attach = on_attach, flags= {debounce_text_changes = 150,}}
+  nvim_lsp.dockerfile.setup{on_attach = on_attach, flags= {debounce_text_changes = 150,}}
+  nvim_lsp.graphql.setup{on_attach = on_attach, flags= {debounce_text_changes = 150,}}
 end
 
 return module
