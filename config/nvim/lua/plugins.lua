@@ -122,5 +122,12 @@ return require('packer').startup(function()
   use 'suy/vim-context-commentstring'
   -- reload neovim config
   use 'famiu/nvim-reload'
+  -- indent guides
+  use {
+    "lukas-reineke/indent-blankline.nvim",
+    config = function ()
+      require('config.indent_guide')
+    end
+  }
 end)
 
