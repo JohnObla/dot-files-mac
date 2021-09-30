@@ -2,6 +2,8 @@ local module = {}
 
 function module.setup()
   require'nvim-tree'.setup {
+    -- open the tree when running this setup function
+    open_on_setup       = true,
     -- hijacks new directory buffers when they are opened.
     update_to_buf_dir   = true,
     -- hijack the cursor in the tree to put it at the start of the filename
