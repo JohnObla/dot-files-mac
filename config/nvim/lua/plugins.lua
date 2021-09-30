@@ -55,7 +55,7 @@ return require('packer').startup(function()
   -- lsp install
   use {
     'kabouzeid/nvim-lspinstall',
-    requires = 'neovim/nvim-lspconfig',
+    requires = {'neovim/nvim-lspconfig', 'onsails/lspkind-nvim'},
     config = function()
       require('config.lsp_install').setup()
     end

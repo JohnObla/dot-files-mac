@@ -15,6 +15,9 @@ function module.setup()
     -- Mappings.
     local opts = { noremap=true, silent=true }
 
+    -- autocomplete icons
+    require('lspkind').init()
+
     -- See `:help vim.lsp.*` for documentation on any of the below functions
     buf_set_keymap('n', 'gD', '<Cmd>lua vim.lsp.buf.declaration()<CR>', opts)
     buf_set_keymap('n', 'gd', '<Cmd>lua vim.lsp.buf.definition()<CR>', opts)
