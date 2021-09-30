@@ -52,13 +52,6 @@ return require('packer').startup(function()
       require('gitsigns').setup()
     end
   }
-  -- compilation checker
-  use {
-    'neovim/nvim-lspconfig',
-    config = function()
-      require('config.lsp').setup()
-    end
-  }
   -- lsp install
   use {
     'kabouzeid/nvim-lspinstall',
