@@ -10,9 +10,6 @@ fish_add_path $N_PREFIX/bin
 # set long path for prompt
 set -g theme_short_path no
 
-# add novahub env variables
-set_novahub_env_variables
-
 # add macports to path
 fish_add_path /opt/local/bin
 
