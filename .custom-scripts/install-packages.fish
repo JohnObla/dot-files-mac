@@ -13,7 +13,7 @@ npm install --global all-the-package-names
 npm install --global yarn
 
 # install neovim
-curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim-macos.tar.gz
+curl -LO https://github.com/neovim/neovim/releases/download/v0.5.1/nvim-macos.tar.gz
 tar xzf nvim-macos.tar.gz
 
 # install vim-plug
