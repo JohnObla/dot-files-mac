@@ -91,26 +91,35 @@ gls.left[4] = {
 }
 
 gls.left[5] = {
-  FileName = {
+  DirPath = {
     provider = function ()
-      return vim.fn.expand("%:F")
+      return vim.fn.expand("%:h")
     end,
+    separator = '/',
+    separator_highlight = {colors.light_blue, colors.bg},
+    highlight = {colors.light_blue, colors.bg},
+  }
+}
+
+gls.left[6] = {
+  FileName = {
+    provider = 'FileName',
     separator = ' ',
     separator_highlight = {'NONE', colors.bg},
     highlight = {colors.light_blue, colors.bg},
   }
 }
 
-gls.left[6] = {
+gls.left[7] = {
     DiagnosticError = {provider = 'DiagnosticError', icon = '  ', highlight = {colors.error_red, colors.bg}}
 }
-gls.left[7] = {DiagnosticWarn = {provider = 'DiagnosticWarn', icon = '  ', highlight = {colors.orange, colors.bg}}}
+gls.left[8] = {DiagnosticWarn = {provider = 'DiagnosticWarn', icon = '  ', highlight = {colors.orange, colors.bg}}}
 
-gls.left[8] = {
+gls.left[9] = {
     DiagnosticHint = {provider = 'DiagnosticHint', icon = '  ', highlight = {colors.vivid_blue, colors.bg}}
 }
 
-gls.left[9] = {DiagnosticInfo = {provider = 'DiagnosticInfo', icon = '  ', highlight = {colors.info_yellow, colors.bg}}}
+gls.left[10] = {DiagnosticInfo = {provider = 'DiagnosticInfo', icon = '  ', highlight = {colors.info_yellow, colors.bg}}}
 
 gls.mid[1] = {
     DiffAdd = {
