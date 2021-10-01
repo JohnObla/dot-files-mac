@@ -96,8 +96,8 @@ gls.left[5] = {
       return vim.fn.expand("%:h")
     end,
     separator = '/',
-    separator_highlight = {colors.light_blue, colors.bg},
-    highlight = {colors.light_blue, colors.bg},
+    separator_highlight = {colors.grey, colors.bg},
+    highlight = {colors.grey, colors.bg},
   }
 }
 
