@@ -23,8 +23,8 @@ config/coc/extensions
 config/coc/list*
 config/coc/snippets-mru
 
-# novahub env variables
-set_novahub_env_variables.fish
+# nx cloud env variable
+set_nx_cloud_env_variable.fish
 
 # node modules
 node_modules
