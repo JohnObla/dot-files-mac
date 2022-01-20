@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-create-next-app@^12.0.4:
-  version "12.0.4"
-  resolved "https://registry.yarnpkg.com/create-next-app/-/create-next-app-12.0.4.tgz#76356f5f5aa70b77a268ec30872b09d7aef8c859"
-  integrity sha512-Fct0SoJCqGoBbVySlEqJsTGZRTSNCH7ZuAemfpQ1/OB4Urq1I14+c9ZN6mjlGaVpaWRxwyOpDNpizb3uBgcrqg==
+create-next-app@^12.0.8:
+  version "12.0.8"
+  resolved "https://registry.yarnpkg.com/create-next-app/-/create-next-app-12.0.8.tgz#ccba9c72e0eba781e0542375758a6be19c14f287"
+  integrity sha512-7CegAQOt02ON+/cZgzh7pyuXw0MNNVRletJC9j3qlcqY5UWm3nr1tQ2DVTc2K0hCQH36tr6RDfeEiJIKBjVsQg==
