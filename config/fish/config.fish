@@ -27,3 +27,6 @@ set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; se
 
 # add nx cloud env variable
 set_nx_cloud_env_variable
+
+# add postgres.app to path
+fish_add_path /Applications/Postgres.app/Contents/Versions/14/bin
