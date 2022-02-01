@@ -26,6 +26,9 @@ config/coc/snippets-mru
 # nx cloud env variable
 set_nx_cloud_env_variable.fish
 
+# aws env variables
+set_aws_env_variables.fish
+
 # node modules
 node_modules
 
