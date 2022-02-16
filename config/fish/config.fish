@@ -33,3 +33,6 @@ set_aws_env_variables
 
 # add postgres.app to path
 fish_add_path /Applications/Postgres.app/Contents/Versions/14/bin
+
+# add pulumi to path
+fish_add_path $HOME/.pulumi/bin
